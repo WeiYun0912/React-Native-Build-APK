@@ -115,6 +115,29 @@ MYAPP\_UPLOAD\_KEY\_PASSWORD=***** <-- 你剛剛建立keystore的密碼
 
 再來到 **android/app** 資料夾底下，打開 **build.gradle** 檔案，在該檔案底下搜尋 **buildTypes** ，並把以下指令貼上，覆蓋掉原本的 **buildTypes**：
 
+```javascript
+signingConfigs {
+    release {
+        if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
+            storeFile file(MYAPP_UPLOAD_STORE_FILE)
+            storePassword MYAPP_UPLOAD_STORE_PASSWORD
+            keyAlias MYAPP_UPLOAD_KEY_ALIAS
+            keyPassword MYAPP_UPLOAD_KEY_PASSWORD
+        }
+    }
+
+buildTypes {
+    debug {
+        signingConfig signingConfigs.debug
+    }
+    release {
+        signingConfig signingConfigs.debug
+        minifyEnabled enableProguardInReleaseBuilds
+        proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+    }
+} 
+```
+
 ### **將專案打包成 apk**
 
 最後回到我們的終端機，先切換到 android 目錄底下：
