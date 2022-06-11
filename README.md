@@ -82,7 +82,7 @@ npx react-native run-android
 如果有上面圖片中的問題，我們需要在專案的 **android** 資料夾底下新增一個檔案，名為 **local.properties** ，之後該檔案利用 **sdk.dir** 來定義 SDK 的位置，作者的 SDK 檔案位置為以下：
 
 ```javascript
-sdk.dir=C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Android\\\\Sdk
+sdk.dir=C:\\Users\\User\\AppData\\Local\\Android\\Sdk
 ```
 
 定義完後再執行一次編譯指令即可。
