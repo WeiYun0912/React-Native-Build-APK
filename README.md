@@ -155,7 +155,7 @@ gradlew assembleRelease
 打包後的 apk 檔案預設會在：
 
 ```javascript
-你的專案名稱\\android\\app\\build\\outputs\\apk
+你的專案名稱\android\app\build\outputs\apk
 ```
 
 ## **給自己的補充**
