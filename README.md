@@ -2,7 +2,7 @@
 
 [Medium Post](https://medium.com/@weiyun0912/react-native-%E5%B0%87%E5%B0%88%E6%A1%88%E6%89%93%E5%8C%85%E6%88%90-apk-%E6%AA%94-2908744f3a2b)
 
-今天主要是來介紹如何將 React Native 的專案輸出成 apk 檔，因為 expo 輸出的 apk 檔較大，一個簡單沒有任何功能的專案用 expo 輸出也要 60 幾 MB，而利用原本的 React Native 輸出成 apk 後，只有 20~30MB 左右。
+今天主要是來介紹如何將 React Native 的專案輸出成 apk 檔，因為 expo 輸出的 apk 檔較大，一個沒有任何功能的專案用 expo 輸出也要 60 幾 MB，而利用原本的 React Native 輸出成 apk 後，只有 20~30MB 左右。
 
 ## **前置**
 
